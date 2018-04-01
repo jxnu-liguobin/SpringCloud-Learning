@@ -1,1 +1,1 @@
-*	SpringCloudѧϰDemo
+*	SpringCloud-learn-demo
