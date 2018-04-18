@@ -45,7 +45,11 @@
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 			<version>1.4.4.RELEASE</version>
 		</dependency>
-
+		<!-- 减少冗余 -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
 	</dependencies>
 	<!-- 非正式版添加下列 -->
 	<repositories>
