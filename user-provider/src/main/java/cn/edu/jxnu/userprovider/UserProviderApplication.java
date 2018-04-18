@@ -1,4 +1,4 @@
-package cn.edu.jxnu.hello;
+package cn.edu.jxnu.userprovider;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -13,24 +13,25 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
+@EnableDiscoveryClient
 @SpringBootApplication
-@EnableDiscoveryClient // 激活发现
 @Slf4j
-public class HelloApplication {
+public class UserProviderApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HelloApplication.class, args);
+		SpringApplication.run(UserProviderApplication.class, args);
 	}
 
 	@Autowired
 	private DiscoveryClient client;
 
 	@SuppressWarnings("deprecation")
-	@RequestMapping(value = "/hello", method = RequestMethod.GET)
-	public String index() {
+	@RequestMapping(value = "/user", method = RequestMethod.GET)
+	public String user() {
 		ServiceInstance instance = client.getLocalServiceInstance();
-		log.info("生成者：/hello,host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
-		return "生产者 ："+"Hello World";
+		log.info("生产者：/user,host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
+		User user = new User(1, "张三");
+		return "生产者："+user.toString();
 	}
 
 }
