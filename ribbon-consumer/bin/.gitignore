@@ -22,5 +22,5 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-/bin/
 /.mvn/
+/bin/
