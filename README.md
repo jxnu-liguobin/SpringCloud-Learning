@@ -4,7 +4,7 @@
 
     组件说明:
     Eureka          服务治理
-    Rabbon          客户端负载均衡
+    Ribbon          客户端负载均衡
     
     模块说明:
     服务注册中心         cloud-centre  
