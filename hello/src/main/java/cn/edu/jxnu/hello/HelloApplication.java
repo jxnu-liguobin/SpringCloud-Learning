@@ -10,12 +10,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import lombok.extern.slf4j.Slf4j;
-
 @RestController
 @SpringBootApplication
 @EnableDiscoveryClient // 激活发现
-@Slf4j
 public class HelloApplication {
 
 	public static void main(String[] args) {
@@ -29,8 +26,8 @@ public class HelloApplication {
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
 	public String index() {
 		ServiceInstance instance = client.getLocalServiceInstance();
-		log.info("生成者：/hello,host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
-		return "生产者 ："+"Hello World";
+		System.out.println("生成者：/hello,host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
+		return "生产者 ：" + "Hello World";
 	}
 
 }
