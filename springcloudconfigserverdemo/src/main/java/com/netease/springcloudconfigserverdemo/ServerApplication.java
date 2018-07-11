@@ -17,9 +17,9 @@ import org.springframework.cloud.config.server.EnableConfigServer;
  */
 @SpringBootApplication
 @EnableConfigServer//开启SpringCloud Config 服务端功能
-public class Application {
+public class ServerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(ServerApplication.class, args);
     }
 }

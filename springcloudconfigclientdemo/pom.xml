@@ -14,7 +14,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.11.RELEASE</version><!--把2.0.3改成了1.5.11，可能存在未知问题，暂未发现-->
+        <version>2.0.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
