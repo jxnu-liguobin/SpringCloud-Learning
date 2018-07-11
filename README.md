@@ -18,7 +18,7 @@
     
     下列是SpringCloud Config：
     
-     配置中心                  springcloudconfigserverdemo
+     配置中心-服务端                 springcloudconfigserverdemo
    [博客简单做了梳理,点击阅读：仅供参考](https://blog.csdn.net/qq_34446485/article/details/81004369)
    
    SpringBoot+Dubbo+Zookeeper 服务治理 [右转](https://github.com/jxnu-liguobin/SpringBoot-Dubbo)
