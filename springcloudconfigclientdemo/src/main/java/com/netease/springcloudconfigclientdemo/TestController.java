@@ -1,0 +1,32 @@
+package com.netease.springcloudconfigclientdemo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
+import org.springframework.core.env.Environment;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * @date: 2018-07-11
+ * @author: liguobin
+ * @description: 测试配置中心
+ */
+@RefreshScope
+@RestController
+public class TestController {
+
+    @Value("${from}")
+    private String form;
+
+    @Autowired
+    private Environment env;
+
+    @RequestMapping("from")
+    public String from() {
+        String env1 = env.getProperty("from", "undefined");
+        String env2 = this.form;
+        return "@Value:" + env1 + "\n" + "env:" + env2;
+    }
+}
+
