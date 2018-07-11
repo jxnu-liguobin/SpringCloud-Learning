@@ -18,7 +18,7 @@
     
     下列是SpringCloud Config：
     
-    springcloudconfig-demo    Config Server Demo 
+    springcloudconfigserverdemo    Config Server Demo 
     
 
     
