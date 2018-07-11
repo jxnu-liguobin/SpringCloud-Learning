@@ -19,6 +19,7 @@
     下列是SpringCloud Config：
     
     springcloudconfigserverdemo    Config Server Demo 
+   [博客简单做了梳理,点击阅读：仅供参考](https://blog.csdn.net/qq_34446485/article/details/81004369)
     
 
     
