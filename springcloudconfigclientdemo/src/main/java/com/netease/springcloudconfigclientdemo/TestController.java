@@ -26,7 +26,7 @@ public class TestController {
     public String from() {
         String env1 = env.getProperty("from", "undefined");
         String env2 = this.form;
-        return "@Value:" + env1 + "\n" + "env:" + env2;
+        return "@Value:" + env1 + "------" + "Env:" + env2;
     }
 }
 
