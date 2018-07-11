@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author: liguobin
  * @description: 测试配置中心
  */
-@RefreshScope
+@RefreshScope//如果代码中需要动态刷新配置，在需要的类上加上该注解就行
 @RestController
 public class TestController {
 
