@@ -1,6 +1,11 @@
 
 ### SpringCloud-learn-demo
 
+    考虑到版本坑多，公司用的也不是最新
+    所以统一版本为
+    SpringBoot 1.5.13
+    SpringCloud Dalston.SR5
+
 
     组件说明：
     
