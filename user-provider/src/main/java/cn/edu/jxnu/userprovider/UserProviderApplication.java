@@ -28,7 +28,7 @@ public class UserProviderApplication {
 		ServiceInstance instance = client.getLocalServiceInstance();
 		System.out.println("生产者：/user,host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
 		User user = new User(1, "张三");
-		return "生产者：" + user.toString();
+		return "生产者 <<< " + user.toString()+" >>>";
 	}
 
 }

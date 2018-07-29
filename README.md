@@ -12,6 +12,7 @@
     Eureka                   服务治理
     Ribbon                   客户端负载均衡
     Config                   配置中心
+    Hystrix                  容错保护
     
     模块说明：
     

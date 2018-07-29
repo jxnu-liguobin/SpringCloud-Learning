@@ -27,7 +27,7 @@ public class HelloApplication {
 	public String index() {
 		ServiceInstance instance = client.getLocalServiceInstance();
 		System.out.println("生成者：/hello,host:" + instance.getHost() + ", service_id:" + instance.getServiceId());
-		return "生产者 ：" + "Hello World";
+		return "生产者 <<<" + " Hello World >>>";
 	}
 
 }
